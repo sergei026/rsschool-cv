@@ -5,8 +5,7 @@
 
 **GitHub** *sergei026*
 
-<!-- Image -->
-<!-- ![profile-photo](assets/img/avatar.jpg) -->
+![profile-photo](assets/img/avatar.jpg)
 
 ### Summary
 
@@ -34,7 +33,7 @@ More projects coming *soon*
 
 ***************
 
-<!-- ### Education
+### Education
 
 **Saint-Petersburg State University of Economics** 2016 - 2022
 *Bachelor & Master degree in Hospitality Management*
@@ -48,4 +47,4 @@ More projects coming *soon*
 **Russian** - Mother tongue
 **English** - C1
 
-*************** -->
+***************
