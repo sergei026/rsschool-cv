@@ -26,7 +26,7 @@ Started to learn Front-End in 2022 at RS School. The main goal is to become a hi
 
 ***************
 
-<!-- ### Portfolio
+### Portfolio
 
 [**iPhone 14 landing page**](https://sergei026.github.io/apple/)
 
@@ -34,7 +34,7 @@ More projects coming *soon*
 
 ***************
 
-### Education
+<!-- ### Education
 
 **Saint-Petersburg State University of Economics** 2016 - 2022
 *Bachelor & Master degree in Hospitality Management*
