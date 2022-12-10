@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    line-height: 40px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Montserrat';
+    color: #0a0a0a;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 830px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color:#002f51;   
+}
+
+.header-avatar {
+    width: 25%;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-content {
+    width: 75%;
+    height: 300px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    background-color: #ff8200;
+    height: 50px;
+    align-items: center;
+}
+
+.nav-link {
+    padding-right: 15px;
+    transition: color 0.5s, font-weight 0.5s;
+}
+
+.nav-link:hover {
+    font-weight: 800;
+    color:#305ea9;
+
+}
+
+.header-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 60px;
+    padding: 15px 15px;
+    background-color: #ff8200;
+}
+
+.main-container{
+    display: flex;
+}
+
+.aside {
+    width: 25%;
+    background-color: #002f51;
+    color: #ffff;
+    padding-bottom: 20px;
+}
+
+.aside-headline {
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 10px 5px 0;
+    border-bottom: solid 3px #ff8200;
+}
+
+.contacts-item,
+.skills-item {
+    position: relative;
+    margin: 15px 0 0 10px;
+    padding-left: 30px;
+    align-items: center;
+    transition: color 0.5s, font-weight 0.1s;
+}
+
+.contacts-item::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 0;
+    top: -2px;
+    background-size: contain;
+}
+
+.contacts-item:nth-child(1)::before {
+    background-image: url(../assets/icons/location.png);
+}
+
+.contacts-item:nth-child(2)::before {
+    background-image: url(../assets/icons/email.png);
+}
+
+.contacts-item:nth-child(3)::before {
+    background-image: url(../assets/icons/github.png);
+}
+
+.contacts-item:nth-child(4)::before {
+    background-image: url(../assets/icons/telegram.png);
+}
+
+.contacts-item:nth-child(5)::before {
+    background-image: url(../assets/icons/discord.png);
+}
+
+.skills {
+    line-height: 29px;
+}
+
+.skills-item::before {
+    content: "";
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    left: -2px;
+    top: -1px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.skills-item:nth-child(1)::before {
+    background-image: url(../assets/icons/html.png);
+}
+
+.skills-item:nth-child(2)::before {
+    background-image: url(../assets/icons/css.png);
+}
+
+.skills-item:nth-child(3)::before {
+    background-image: url(../assets/icons/js.png);
+}
+
+.skills-item:nth-child(4)::before {
+    background-image: url(../assets/icons/github-skill.png);
+}
+
+.skills-item:nth-child(5)::before {
+    background-image: url(../assets/icons/figma.png);
+}
+
+.contacts-item:hover {
+    color: #ff8200;
+    font-weight: 600;
+}
+
+.main-content {
+    width: 75%;
+}
+
+.section-headline {
+    display: block;
+    color: #305ea9;
+    font-size: 30px;
+    padding: 20px 10px 5px 0;
+    border-bottom: solid 3px #ff8200;
+    text-align: end;
+    margin: 0;
+}
+
+.section-content {
+    margin: 0 30px;
+}
+
+.main-text {
+    padding: 10px 0 5px 0;
+    margin: 0;
+}
+
+.lang-item {
+    list-style: inside disclosure-closed;
+    line-height: 25px;
+}
+
+.pre {
+    margin: 10px 0 0 0;
+    height: 100%;
+    width: 100%;
+}
+
+.code {
+    width: 100%;
+}
+
+.projects-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-item {
+    width: 40%;
+    min-height: 80%;
+    background-color: #0092ff;
+    margin: 15px 0 15px 0;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    margin: 10px 0;
+}
+
+.project-info {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.project-img {
+    max-width: 100%;
+    transition: transform 0.5s;
+    background-repeat: no-repeat;
+}
+
+.project-img:hover {
+    transform: scale(110%);
+}
+
+.soon {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.i-hglt {
+    color: #ffff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff8200;
+}
+
+.github {
+    width: 25%;
+    height: 100%;
+    background-color: #002f51;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gh-logo {
+    fill: #ff8200;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 75%;
+}
+
+.rsschool {
+    fill: #305ea9;
+}
+
+.footer-year {
+    color: #ffff;
+    font-size: 20px;
+    padding-left: 150px;
+}
+
+.rs-link {
+    padding-right: 150px;
+}
